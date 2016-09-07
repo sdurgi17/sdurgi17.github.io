@@ -1,21 +1,51 @@
-# Gravity
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kronik3r/daktilo/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
+# Daktilo
+Daktilo is a [Jekyll](jekyllrb.com) theme with a minimal design inspired from typewriters.
 
-If there's any issue you are facing in setting up this theme I'm there for you. Just create an issue in this repository (http://github.com/hemangsk/Gravity), (https://help.github.com/articles/creating-an-issue/) and I'll get back to you asap.
+# More info and Live preview
+[Click here](http://daktilo.github.io/) to see the theme in action.
 
-![alt tag](https://farm2.staticflickr.com/1593/25549169123_cfb392bfe9.jpg)
+# Features
+- Fully responsive
+- [Disqus](https://disqus.com/) integration for comments.
+- Google Analytics integration.
+- Syntax Highlighter (using [highlight.js](https://highlightjs.org/)).
+- Support for categories.
+- Font-Awesome Icons.
+- Optimized for SEO.
+- Coolest [404 page ever](http://electrik-frog.com/daktilo/404.html).
 
-![alt-tag](https://farm8.staticflickr.com/7295/26900743846_10e9a0ba71_o.png)
-![alt-tag](https://farm8.staticflickr.com/7675/26840339222_b078607576_o.png)
-![alt-tag](https://farm2.staticflickr.com/1592/26151881165_3f351e5fd1.jpg)
+# How to use it
+Start by cloning the repository, then check the `_config.yml` file and change it accordingly.
+Note that the `title` property is what will be displayed as logo.
 
+Finally execute `jekyll serve --watch` and head to [localhost:4000](http://127.0.0.1:4000) to see the result.
 
+# Using categories
+Categories are little bit tricky. Please make sure to do the following for each category:
 
-![alt-tag](https://farm2.staticflickr.com/1674/25549273413_3872aa3b1e_o.png)
+- Create a file within `categories` folder with the name of your category
+For example let's say that we have a category called `An Awesome Category` you will need to add an `an-awesome-category.html` file with this content:
 
+``` html
+---
+layout: category
+category: an-awesome-category
+permalink: /categories/an-awesome-category/
+---
 
+```
 
-![alt-tag](https://farm2.staticflickr.com/1590/26563924866_ec40fd1ccd_o.png)
+- Create an entry inside `_data/categories.yml`
 
-![alt-tag](https://farm2.staticflickr.com/1565/25879042020_03acf3c968_o.png)
+``` html
+- slug: an-awesome-category
+  name: An Awesome Category
+```
 
+- Then you will see it in the footer in the `Explore` section.
+
+# License
+
+The contents of this repository is licensed under [The MIT License.](https://opensource.org/licenses/MIT)

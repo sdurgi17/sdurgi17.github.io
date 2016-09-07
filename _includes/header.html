@@ -1,19 +1,24 @@
+<header class="header">
+    <div class="navigation">
+        <a href="/" class="logo">{{ site.title }}</a>
 
-<div class="wrapper">
-  <center> <a href="/index.html"><div class="site-title">   {{site.title}} </div></a></center>
-</div>
-<div class="wrapper site-description">
-<center>  {{site.description}} </center>
-</div>
-<div class="wrapper">
-  <div class="trigger site-navigation">
-    <a class="page-link" href="{{site.url}}{{site.baseurl}}">HOME</a><span class="exclamationMark">/</span>
+        <ul class="menu">
+            <li class="menu__entry"><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+            <li class="menu__entry"><a href="{{ '/' | prepend: site.baseurl }}">Blog</a></li>
+        </ul>
+    </div>
 
-    {% for sitePage in site.pages %}
-    {% if sitePage.title %}
+    <ul class="social-links">
+        {% if site.author.github %}
+            <a href="https://github.com/{{ site.author.github }}" class="social-links__entry" target="_blank">
+                <i class="fa fa-github"></i>
+            </a>
+        {% endif %}
 
-    <a class="page-link" href="{{sitePage.url | prepend: site.baseurl }}">{{sitePage.title}}</a><span class="exclamationMark">/</span>
-    {% endif %}
-    {% endfor %}
-  </div>
-</div>
+        {% if site.author.twitter %}
+            <a href="https://twitter.com/{{ site.author.twitter }}" class="social-links__entry" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+        {% endif %}
+    </ul>
+</header>

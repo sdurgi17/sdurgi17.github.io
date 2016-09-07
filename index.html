@@ -1,40 +1,18 @@
 ---
-layout: default
+layout: page
+title: Blog
+subtitle: Hitchhiker's guid to web development
+sitemap:
+  priority: 0.9
 ---
 
-<div class="home">
-
-
-  {% for post in site.posts%}
-  <div class="post postContent">
-    <div  class="postDate"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
-    </div>
-    <div class="postDay">
-      {{post.tag}}
-    </div>
-    <br>
-    <div class="postTitle">
-    <a class='postLink' href="{{site.url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a>
-    </div>
-    <div class="postExt">
-   {{ post.content | strip_html | truncatewords:20}}
-    </div>
-  </div>
-
-
-  {% endfor %}
-  <!--<ul class="post-list">
+<ul class="list-posts">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link-main" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+        <li class="post-teaser">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                <span class="post-teaser__title">{{ post.title }}</span>
+                <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
+            </a>
+        </li>
     {% endfor %}
-  </ul>-->
-
-
-
-</div>
+</ul>
