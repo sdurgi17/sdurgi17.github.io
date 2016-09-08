@@ -1,11 +1,6 @@
-- slug: design
-  name: Design
-
-- slug: tools
-  name: Tools
-
-- slug: productivity
-  name: Productivity
-
+- slug: tech
+  name: Tech
+- slug: physics
+  name: Physics
 - slug: general
-  name: general
+  name: General
