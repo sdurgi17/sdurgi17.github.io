@@ -9,10 +9,10 @@ url: "http://srikardurgi.com" # the base hostname & protocol for your site
 author:
   fullname: Srikar Durgi
   googleplus: http://goo.gl/J9BF1g
-  github: http://goo.gl/vqKnp8
-  twitter: http://goo.gl/FXp6nN
-  linkedin: http://goo.gl/I8plJt
-  facebook: http://goo.gl/ZBdRp4
+  github: https://github.com/sdurgi17
+  twitter: https://twitter.com/sdurgi17
+  linkedin: https://www.linkedin.com/in/srikar-bhargav-durgi-81869773/
+  facebook: https://www.facebook.com/srikar.durgi
   disqus: srikardurgi
 
 google_analytics: 'UA-40300195-2'
